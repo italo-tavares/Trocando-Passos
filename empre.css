@@ -1,0 +1,231 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #f8f8f8; /* Cor de fundo do header */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.logo {
+    width: 70px; /* Define o tamanho da logo */
+    height: 70px; /* Mantém a proporção da logo */
+    margin-right: 10px; /* Espaçamento entre a logo e o nome */
+}
+
+.logo-container h1 {
+    font-size: 2rem;
+    color: #333; /* Cor do texto do nome da loja */
+    margin: 0; /* Remove a margem do título */
+}
+
+.content {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa a altura total da janela de visualização */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f8f8f8; /* Cor de fundo para contraste */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos no centro */
+    justify-content: center; /* Garante o alinhamento central vertical */
+}
+
+.center-image {
+    width: 200px; /* Define o tamanho da imagem */
+    margin-top: 20px; /* Espaço entre o texto e a imagem */
+    border-radius: 10px; /* Deixa as bordas arredondadas, opcional */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #491fd3;
+}
+
+/* Banner */
+.banner {
+    background-image: url('imagem/img8.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #491fd3;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px; /* Adiciona mais espaço entre o botão e o texto acima */
+    display: inline-block; /* Garante que o botão respeite a margem */
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Seções */
+section {
+    padding: 80px 50px;
+}
+
+.shop .product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 15px 0; /* Ajusta o espaço abaixo do preço */
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens na horizontal */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas, se necessário */
+}
+
+.product-img {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px; /* Reduzi a largura de cada produto para garantir que caibam três produtos em linha */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Centraliza as imagens verticalmente */
+}
+
+/* Reduzir tamanho das imagens */
+.product-img img {
+    width: 70%; /* Reduzi a largura da imagem para 70% do contêiner do produto */
+    height: auto; /* Mantém a proporção original */
+    border-radius: 10px;
+    margin-bottom: 15px; /* Pequeno espaçamento abaixo da imagem */
+}
+
+.product-img p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.btn-secondary {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
