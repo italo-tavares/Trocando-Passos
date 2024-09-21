@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="https://i.imgur.com/0WBYSAh.jpeg">
-    <title>Tênis em Movimento</title>
+    <title>Trocando Passos</title>
     <link rel="stylesheet" href="/empre.css"> <!-- Caminho absoluto corrigido -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -13,8 +13,8 @@
     <header>
         <div class="container">
             <div class="logo-container">
-                <img src="https://i.imgur.com/WJC9fZj.jpeg" alt="Logo Tênis em Movimento" class="logo">
-                <h1>Tênis em Movimento</h1>
+                <img src="https://i.imgur.com/WJC9fZj.jpeg" alt="Logo Trocando Passos" class="logo">
+                <h1>Trocando Passos</h1>
             </div>
             <nav>
                 <ul>
@@ -33,7 +33,7 @@
     <section id="home" class="banner">
         <div class="overlay"></div>
         <div class="banner-content">
-            <h2>Entre em Movimento!</h2>
+            <h2>Troque seu Tênis!</h2>
             <p>Troque seu tênis usado que está deixado de lado, porém muito bem conservado por um novo ou você pode trazer na loja para analisarmos o estado do seu tênis e ganhar uma quantia em dinheiro. 
             Faça parte do movimento sustentável.</p>
             <a href="#shop" class="btn">Confira Agora</a>
@@ -78,6 +78,20 @@
         Troque seu tênis usado que está deixado de lado, porém muito bem conservado por um novo ou você pode trazer na loja para analisamos o estado do seu tênis e você pode ganhar uma quantia em dinheiro, em troca do tênis.
         Faça parte do movimento sustentável.
         </p>
+    </section>
+
+    <section class="reviews-section">
+        <h2>Deixe sua Avaliação</h2>
+        
+        <form id="reviewForm">
+            <input type="text" id="name" placeholder="Seu nome" required>
+            <textarea id="review" placeholder="Sua avaliação" required></textarea>
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+        
+        <div class="reviews-list" id="reviewsList">
+            <!-- As avaliações aparecerão aqui -->
+        </div>
     </section>
 
     <!-- Seção de Contato -->
